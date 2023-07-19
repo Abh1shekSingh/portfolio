@@ -1,0 +1,125 @@
+.work {
+    /* height: 100vh; */
+    padding:4rem 0;
+    background-color: #F6F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.work h3 {
+    text-align: center;
+    font-family: 'Anybody', cursive;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #2d2d2d;
+}
+
+h3 span {
+    font-weight: 900;
+    position: relative;
+}
+
+.image_holder {
+    width: 100% ;
+    height: 100%;
+    background-color: #78C1F3;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 0.3s ease-in-out;
+}
+.img_content > h2 {
+    font-family: 'Anybody', cursive;
+    font-weight: 800;
+    color: #2d2d2d;
+}
+.img_content {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    top: 2rem;
+    right: 2rem;
+}
+.image_holder > img {
+    position:relative;
+    width: 100%;
+    top: 20%;
+    left: 10%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+.image_holder:hover {
+   
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    cursor: pointer;
+}
+.image_holder:hover > img {
+    top: 30%;
+}
+.card_container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 4em;
+    top: 2rem;
+    padding: 1rem 1.5rem;
+ }
+/*.card {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card:after {
+    content:"";
+    background: linear-gradient(
+        transparent,
+        #8F43EE,
+        transparent
+    );
+    width: 1.5px;
+    height: 76px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    opacity: 0;
+    z-index: 1;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+}
+
+.card:hover:after {
+    opacity: 1;
+    top: 25%;
+}
+
+.card img {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.card img:hover {
+     filter: brightness(80%);
+}
+
+.card title {
+    font-family: 'Mako' !important;
+} */
+
+@media only screen and (min-width: 600px) {
+    .card_container {
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 7rem 3rem;
+    }
+}
+

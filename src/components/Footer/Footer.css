@@ -1,0 +1,110 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    height: 100vh;
+    overflow: hidden;
+}
+.Footer_container {
+    position: relative;
+}
+.song_holder {
+    position: relative;
+    border-radius: 3rem;
+    padding: 1rem;
+    background-color: #ffff;
+    opacity: 0.8;
+    cursor: pointer;
+    overflow: hidden;
+}
+.song_content {
+    gap: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.song_content > img {
+    width: 10%;
+}
+.song_name > p {
+    font-family: 'Mako', sans-serif;
+    margin-bottom: 5px;
+    color: #2d2d2d;
+}
+.song_name > h3 {
+    font-family: 'Anybody',cursive;
+    font-size: 1rem;
+    color: #2d2d2d;
+}
+.song_holder > a {
+    text-decoration: none;
+}
+.Footer > h3 {
+    font-family: 'Mako', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #2d2d2d;
+}
+.socials {
+    margin-top: 1rem;
+    width: 100%;
+}
+.social_children  li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.95rem;
+    font-family: 'Mako', sans-serif;
+    transition: all 300ms ease;
+}
+.social_children li:hover {
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+.social_children h4 {
+    font-family: 'Anybody', cursive;
+    font-size: 1rem;
+    color: #2d2d2d;
+}
+.social_children a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+.social_children {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 4rem;
+}
+#hand {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    transform: translate(-50%, 50%);
+}
+@media only screen and (min-width: 600px) {
+    .Footer {
+        padding: 3rem 15rem;
+        flex-direction: row;
+        gap: 7rem;
+    }
+    .Footer > img {
+        width: 30%;
+    }
+    .song_holder {
+        border-radius: 10rem;
+        width: 60%;
+    }
+    .song_content > img {
+        width: 10%;
+    }
+    .social_children {
+        padding: 1rem 7rem;
+    }
+    #hand {
+        width: 10%;
+    }
+}

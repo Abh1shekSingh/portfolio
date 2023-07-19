@@ -1,0 +1,21 @@
+Design reference Numbers :
+
+3 small lengths
+    a) 0.25 rem
+    b) 0.5 rem
+    c) 0.75 rem
+
+3 medium lengths
+    a) 1 rem
+    b) 1.25rem
+    c) 1.25rem
+
+3 large lengths
+    a) 2rem
+    b) 3rem
+    c) 4rem
+
+Colors
+
+    a) #DBD6CB
+    b) #171717 

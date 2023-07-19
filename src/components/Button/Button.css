@@ -1,0 +1,14 @@
+.btn {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #171717;
+    font-size: 1rem;
+    font-family: 'Mako';
+}
+.btn:hover {
+    border: 1.5px solid #171717 !important;
+    background-color: #171717;
+    color: #ffffff !important;
+}
