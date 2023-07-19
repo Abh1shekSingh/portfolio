@@ -12,3 +12,9 @@
     background-color: #171717;
     color: #ffffff !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .btn {
+        padding: 1rem 1.25rem;
+    }
+}

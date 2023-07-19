@@ -86,17 +86,19 @@ p span {
         flex-direction: column;
         padding-top: 5rem;
         position: relative;
+        
     }
     .hero img {
-        width: 100%;
+        width: 140%;
         visibility: visible;
         margin-top: -2rem;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         z-index: 1;
         text-align: center;
+        width: 200%;
     }
     .hero p {
         font-size: 1.15rem;
@@ -104,6 +106,7 @@ p span {
         text-align: center;
         z-index: 1;
         margin-top: 2rem;
+        width: 120%;
     }
     .tealBlur {
         opacity: 0.5;

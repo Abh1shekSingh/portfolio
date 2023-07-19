@@ -3,6 +3,7 @@ import work2 from './assets/bookStore.png'
 import work3 from './assets/cryptorushh.png'
 import work4 from './assets/codekaro.png'
 import work5 from './assets/opendevcons.png'
+import bookStoreblur from './assets/bookStoreBlur.jpg'
 const project = [
     {
         id:1,
@@ -19,6 +20,7 @@ const project = [
         name:`Author's Portfolio`,
         desc:'Crafted an engaging author portfolio website that beautifully showcases my books, writing style, and literary achievements. Integrated seamless e-commerce functionality for direct book sales and provided an immersive reading experience for visitors.',
         img:work2,
+        imgBlur:bookStoreblur,
         color:'FF9B9B',
         textcolor:'FFFFFF',
         github:"https://github.com/Abh1shekSingh/BookStore",
