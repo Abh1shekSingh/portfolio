@@ -1,6 +1,6 @@
 import React from 'react'
 import spotify from '../../assets/spotify.svg'
-import hand from '../../assets/hand.svg'
+import hand from '../../assets/hand.webp'
 import './Footer.css'
 
 function Footer() {
