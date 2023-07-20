@@ -2,6 +2,7 @@ import React from 'react'
 import spotify from '../../assets/spotify.svg'
 import hand from '../../assets/hand.svg'
 import './Footer.css'
+
 function Footer() {
   return (
     <div className='Footer_container'>
@@ -35,7 +36,7 @@ function Footer() {
         </div>
         
     </div>
-        <img id='hand' src={hand} alt='hand' />
+    <img id='hand' src={hand} alt='hand' />    
     </div>
   )
 }

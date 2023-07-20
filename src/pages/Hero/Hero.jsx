@@ -2,25 +2,8 @@ import React from 'react'
 import './Hero.css' 
 import avtar from '../../assets/Avtar.svg'
 import Work from '../../components/Work/Work'
-
+import { motion } from 'framer-motion'
 function Hero() {
-  // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  // function handleMouse(e) {
-  //   // console.log(e)
-  //   let it = 0;
-  //   const interval = setInterval(() => {
-  //     e.target.innerText = e.target.innerText.split("")
-  //     .map((letter, index) => {
-  //       if(index < it) {
-  //         return e.target.dataset.value[index];
-  //       }
-  //       return letters[Math.floor(Math.random()*26)]
-  //     })
-  //     .join("");
-  //     if(it >= e.target.dataset.value.length) clearInterval(interval);
-  //     it += 1 / 3;
-  //   }, 30)
-  // }
   return (
     <>
     <div className='hero'>
@@ -29,10 +12,10 @@ function Hero() {
           <div className='primaryBlur'></div>
         </div>
         <div className='hero_content'>
-          <h1>Hi. I'm Abhishek.<br /> A Developer.</h1>
-          <p>I turn ideas into design and <span>Rasmalai</span> into website.</p>
+          <motion.h1 initial={{y:-50,opacity:0}} animate={{y:0}} whileInView={{ opacity:1}} transition={{ type:'tween', stiffness:100 }} viewport={{once:true}}>Hi. I'm Abhishek.<br /> A Developer.</motion.h1>
+          <motion.p initial={{y:-50, opacity:0}} animate={{y:0,opacity:1}} whileInView={{ opacity:1}} transition={{type:'tween', stiffness:100, delay:0.2}} viewport={{once:true}}>I turn ideas into design and <span>Rasmalai</span> into website.</motion.p>
         </div>
-        <img src={avtar} alt='avatar' />
+        <motion.img initial={{y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{type:'tween', delay:0.3}} src={avtar} alt='avatar' />
     </div>
     <Work />
     </>

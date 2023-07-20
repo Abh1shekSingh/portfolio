@@ -80,11 +80,12 @@
 #hand {
     width: 30%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%);
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-    transform: translate(-50%, 80%);
 }
+
 @media only screen and (min-width: 600px) {
     .Footer {
         padding: 3rem 15rem;

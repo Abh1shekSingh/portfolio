@@ -1,9 +1,7 @@
 import React from 'react'
 import './Work.css'
 import project from '../../constant'
-
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 function Work() {
   const handleClick = (url) => {
     window.location.assign(url);

@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
-
 import Button from '../Button/Button'
+import { motion } from 'framer-motion'
 function Navbar() {
   return (
     <header className='header'>
