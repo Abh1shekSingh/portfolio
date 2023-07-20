@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import './App.css'
 import { Routes, Route} from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './pages/Hero/Hero';
-import Footer from './components/Footer/Footer';
-import About from './pages/About/About';
+
+
+const Navbar = lazy(() => import('./components/Navbar/Navbar')) ;
+const Hero = lazy(() => import('./pages/Hero/Hero')) ;
+const Footer = lazy(() => import('./components/Footer/Footer')) 
+const About = lazy(() => import('./pages/About/About')) 
 function App() {
   return (
     <div className="App">

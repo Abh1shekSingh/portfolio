@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {lazy} from 'react'
 import './Hero.css' 
 import avtar from '../../assets/Avtar.svg'
-import Work from '../../components/Work/Work'
 import { motion } from 'framer-motion'
+const Work = lazy(() => import('../../components/Work/Work'))  
 function Hero() {
   return (
     <>
